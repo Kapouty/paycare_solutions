@@ -26,6 +26,8 @@ jobs:
 
       - name: Run tests (pytest)
         run: pytest -v
+        env:
+          PYTHONPATH: ${{ github.workspace }}
 
       - name: Build Docker image
         run: docker build -t paycare-etl .
