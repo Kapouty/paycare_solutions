@@ -16,6 +16,7 @@ RUN pip install --no-cache-dir pandas
 # Copy ETL script (and optionally sample CSVs if present)
 COPY etl.py .
 
+COPY data ./data
 # Default input/output file names (the script uses these)
 # If you have sample CSVs, you can COPY them too:
 # COPY input_data.csv .
