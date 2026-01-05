@@ -1,6 +1,7 @@
 # tests/test_etl.py
 import os
 import pandas as pd
+import pytest
 from etl import extract_data, transform_data, load_data
 
 
